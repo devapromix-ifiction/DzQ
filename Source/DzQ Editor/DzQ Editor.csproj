@@ -1,0 +1,107 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{04E221C3-6189-4691-8293-C0D95B6CEF97}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DzQ_Editor</RootNamespace>
+    <AssemblyName>DzQ Editor</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Action.cs" />
+    <Compile Include="AddSmth.cs" />
+    <Compile Include="AddSmth.Designer.cs">
+      <DependentUpon>AddSmth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="CmbEd.cs" />
+    <Compile Include="CmbEd.Designer.cs">
+      <DependentUpon>CmbEd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ComEdit.cs" />
+    <Compile Include="ComEdit.Designer.cs">
+      <DependentUpon>ComEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommandItem.cs" />
+    <Compile Include="IAction.cs" />
+    <Compile Include="ItmEd.cs" />
+    <Compile Include="ItmEd.Designer.cs">
+      <DependentUpon>ItmEd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Location.cs" />
+    <Compile Include="LocEd.cs" />
+    <Compile Include="LocEd.Designer.cs">
+      <DependentUpon>LocEd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs" />
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="myItem.cs" />
+    <Compile Include="NewCom.cs" />
+    <Compile Include="NewCom.Designer.cs">
+      <DependentUpon>NewCom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuestObject.cs" />
+    <Compile Include="Saver.cs" />
+    <Compile Include="Saver.Designer.cs">
+      <DependentUpon>Saver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Storage.cs" />
+    <Compile Include="VarEd.cs" />
+    <Compile Include="VarEd.Designer.cs">
+      <DependentUpon>VarEd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Variab.cs" />
+    <EmbeddedResource Include="AddSmth.resx">
+      <DependentUpon>AddSmth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CmbEd.resx">
+      <DependentUpon>CmbEd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComEdit.resx">
+      <DependentUpon>ComEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItmEd.resx">
+      <DependentUpon>ItmEd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocEd.resx">
+      <DependentUpon>LocEd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewCom.resx">
+      <DependentUpon>NewCom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Saver.resx">
+      <DependentUpon>Saver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VarEd.resx">
+      <DependentUpon>VarEd.cs</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="DzQ Editor.cd" />
+  </ItemGroup>
+</Project>
