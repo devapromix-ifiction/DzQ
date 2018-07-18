@@ -1,0 +1,77 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{5AB6D705-1FE1-434B-8EEE-45A6F5E80D67}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DzQ</RootNamespace>
+    <AssemblyName>DzQ</AssemblyName>
+    <ApplicationIcon>bin\Debug\dzq.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Action.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="CommandItem.cs" />
+    <Compile Include="Core.cs" />
+    <Compile Include="Decoder.cs" />
+    <Compile Include="IAction.cs" />
+    <Compile Include="InputBox.cs" />
+    <Compile Include="InputBox.Designer.cs">
+      <DependentUpon>InputBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Location.cs" />
+    <Compile Include="MainForm.cs" />
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MultimediaManager.cs" />
+    <Compile Include="myItem.cs" />
+    <Compile Include="Options.cs" />
+    <Compile Include="Options.Designer.cs">
+      <DependentUpon>Options.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PictureBox.cs" />
+    <Compile Include="PictureBox.Designer.cs">
+      <DependentUpon>PictureBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuestObject.cs" />
+    <Compile Include="Saver.cs" />
+    <Compile Include="Variab.cs" />
+    <EmbeddedResource Include="InputBox.resx">
+      <DependentUpon>InputBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options.resx">
+      <DependentUpon>Options.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PictureBox.resx">
+      <DependentUpon>PictureBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="dzq.ico" />
+    <Content Include="DzQ.cd" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<ClassDiagram Zoom="1" MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="DzQ.myAction" Collapsed="False">
+    <Position X="0.5" Y="5" Width="1.511471" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="DzQ.Core" Collapsed="False">
+    <Position X="0.5" Y="7.1" Width="1.6" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+      <Compartment Name="Nested Types" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="DzQ.CmBlock" Collapsed="False">
+    <Position X="0.5" Y="2.8" Width="1.580006" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="DzQ.Location" Collapsed="False">
+    <Position X="2.7" Y="2.8" Width="1.668737" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="DzQ.MainForm" Collapsed="False">
+    <Position X="0.5" Y="0.5" Width="3.279689" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="DzQ.myItem" Collapsed="False">
+    <Position X="4.8" Y="2.8" Width="1.321012" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="DzQ.QuestObject" Collapsed="False">
+    <Position X="0.5" Y="0.5" Width="1.839108" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="DzQ.Saver" Collapsed="False">
+    <Position X="0.5" Y="26.4" Width="1.30318" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Interface Name="DzQ.IAction" Collapsed="False">
+    <Position X="0.5" Y="28.8" Width="1.139982" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+    </Compartments>
+  </Interface>
+</ClassDiagram>
